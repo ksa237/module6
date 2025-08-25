@@ -8,3 +8,8 @@ hw*.iml
 **/task*/**/.idea/
 task*.iml
 **/task*/**/.gitignore
+
+**/ex*/**/.gigaide/
+**/ex*/**/.idea
+ex*.iml
+**/ex*/**/.gitignore
