@@ -1,3 +1,4 @@
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Main {
@@ -35,11 +36,25 @@ public class Main {
         //System.out.println(isPositive2.test(5));
         //System.out.println(isPositive2.test(-2));
 
-        OnDoneListener listener = (v) -> System.out.println(v);
+        /*OnDoneListener listener = (v) -> System.out.println(v);
         Test test = new Test(listener);
         test.execute();
+        */
+
+
+        // ссылка на статический метод
+        Consumer<String> sayable = Main::saySomething;
+        sayable.accept("Я купил жене и дочке разноцветные чулочки!");
 
     }
+
+
+
+
+    private static void saySomething(String s) {
+        System.out.println(s);
+    }
+
 }
 
 @FunctionalInterface
