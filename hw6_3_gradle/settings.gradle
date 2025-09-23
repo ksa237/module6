@@ -1,0 +1,4 @@
+rootProject.name = 'hw6_3_gradle'
+include 'db'
+include 'api'
+include 'service'
